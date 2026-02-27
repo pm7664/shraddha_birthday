@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Shraddha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== BACKGROUND MUSIC SYSTEM ===== -->
+    <audio id="bgMusic" loop>
+        <source src="music/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="music-box">
+        <button id="musicBtn">🎵</button>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Happy Birthday, Shraddha ✨</h1>
+            <p>
+                Some bonds aren’t just made by relation,<br>
+                they are built by memories, trust,<br>
+                and growing up together 💛
+            </p>
+        </div>
+        <div class="scroll-down">↓</div>
+    </section>
+
+    <!-- ================= MEMORY CARDS ================= -->
+    <section class="cards-section">
+    <h2>Our Journey 🌿</h2>
+
+    <div class="cards">
+
+        <div class="card" onclick="showText(this)">
+    <h3>Funniest Moments</h3>
+    <p class="card-desc">
+        The random laughs, the inside jokes, and the chaos only we understand.
+    </p>
+</div>
+
+<div class="card" onclick="showText(this)">
+    <h3>Why You're Special</h3>
+    <p class="card-desc">
+        Your kindness, strength, and quiet understanding make you truly rare.
+    </p>
+</div>
+
+<div class="card" onclick="showText(this)">
+    <h3>Future Promise</h3>
+    <p class="card-desc">
+        No matter where life takes us, this bond will remain strong and constant.
+    </p>
+</div>
+
+    </div>
+
+</section>
+    <!-- ================= TIMELINE ================= -->
+    <section class="timeline-section">
+        <h2>Moments Timeline ✨</h2>
+        <div class="timeline">
+            <div class="timeline-item">👶 Childhood</div>
+            <div class="timeline-item">🏫 School Days</div>
+            <div class="timeline-item">📸 Special Memories</div>
+            <div class="timeline-item">🌅 Today</div>
+        </div>
+    </section>
+
+    <!-- ================= PHOTO GALLERY ================= -->
+    <section class="gallery-section">
+        <h2>Moments That Built Our Bond 💛</h2>
+        <div class="gallery">
+            <img src="images/pic1.jpeg">
+            <img src="images/pic2.jpeg">
+            <img src="images/pic3.jpeg">
+            <img src="images/pic4.jpeg">
+            <img src="images/pic6.jpeg">
+            <img src="images/pic7.jpeg">
+            <img src="images/pic8.jpeg">
+            <img src="images/pic9.jpeg">
+            <img src="images/pic10.jpeg">
+            <img src="images/pic11.jpeg">
+            <img src="images/pic12.jpeg">
+            <img src="images/pic5.jpeg">
+        </div>
+    </section>
+
+    <!-- ================= AGE SECTION ================= -->
+    <section class="age-section">
+        <h2>Time Since You Entered This World ✨</h2>
+
+        <p class="age-text">
+            Shraddha is <span id="years"></span> years old 💛
+        </p>
+
+        <p class="seconds-text">
+            That’s <span id="seconds"></span> seconds of spreading smiles 🌿
+        </p>
+
+        
+    </section>
+
+    <!-- ================= FINAL MESSAGE ================= -->
+    <section class="final-section">
+        <button id="surpriseBtn">🎁 Open Final Wish</button>
+        <p id="finalMessage"></p>
+    </section>
+
+    <!-- ================= IMAGE PREVIEW BOX ================= -->
+    <div class="preview-box" id="previewBox">
+        <span id="closePreview">&times;</span>
+        <img id="previewImg">
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
