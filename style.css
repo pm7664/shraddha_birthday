@@ -131,9 +131,10 @@ h1, h2 {
 
 .gallery img {
     width: 100%;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    transition: 0.4s;
+    height: 250px;        /* same height for all */
+    object-fit: cover;    /* crop properly */
+    border-radius: 15px;
+    transition: transform 0.4s ease;
 }
 
 .gallery img:hover {
@@ -483,4 +484,12 @@ h1, h2 {
 .card.active {
     box-shadow: 0 0 25px rgba(212,175,55,0.5);
     border: 1px solid #d4af37;
+}
+.credit {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #aaa;
 }
