@@ -488,8 +488,7 @@ h1, h2 {
 .credit {
     text-align: center;
     padding: 20px;
-    font-size: 14px;
+    font-size: 24px;   /* increased size */
     font-family: 'Poppins', sans-serif;
-    background: #111;
-    color: #aaa;
+    color: #777;
 }
